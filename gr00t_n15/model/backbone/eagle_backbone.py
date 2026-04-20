@@ -19,10 +19,10 @@ from torch import nn
 from transformers import AutoConfig, AutoModel
 from transformers.feature_extraction_utils import BatchFeature
 
-import gr00t
+import gr00t_n15
 
 DEFAULT_EAGLE_PATH = os.path.join(
-    os.path.dirname(gr00t.__file__), "model", "backbone", "eagle2_hg_model"
+    os.path.dirname(gr00t_n15.__file__), "model", "backbone", "eagle2_hg_model"
 )
 
 
