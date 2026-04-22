@@ -68,7 +68,7 @@ from lerobot.utils.utils import init_logging, log_say
 # sys.path.append(os.path.expanduser("~/Isaac-GR00T/gr00t/eval/"))
 from service import ExternalRobotInferenceClient
 
-# from gr00t_n15.eval.service import ExternalRobotInferenceClient
+# from gr00t.eval.service import ExternalRobotInferenceClient
 
 #################################################################################
 

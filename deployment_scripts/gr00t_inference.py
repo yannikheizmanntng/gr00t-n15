@@ -22,8 +22,8 @@ from action_head_utils import action_head_pytorch_forward
 from trt_model_forward import setup_tensorrt_engines
 
 import gr00t
-from gr00t_n15.data.dataset import LeRobotSingleDataset
-from gr00t_n15.model.policy import Gr00tPolicy
+from gr00t.data.dataset import LeRobotSingleDataset
+from gr00t.model.policy import Gr00tPolicy
 
 
 def compare_predictions(pred_tensorrt, pred_torch):
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Load data config
-    from gr00t_n15.experiment.data_config import load_data_config
+    from gr00t.experiment.data_config import load_data_config
 
     data_config = load_data_config(args.data_config)
     modality_config = data_config.modality_config()

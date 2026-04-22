@@ -20,12 +20,12 @@ from typing import List, Literal
 import numpy as np
 import tyro
 
-from gr00t_n15.data.dataset import LeRobotSingleDataset
-from gr00t_n15.data.embodiment_tags import EMBODIMENT_TAG_MAPPING
-from gr00t_n15.eval.robot import RobotInferenceClient
-from gr00t_n15.experiment.data_config import load_data_config
-from gr00t_n15.model.policy import BasePolicy, Gr00tPolicy
-from gr00t_n15.utils.eval import calc_mse_for_single_trajectory
+from gr00t.data.dataset import LeRobotSingleDataset
+from gr00t.data.embodiment_tags import EMBODIMENT_TAG_MAPPING
+from gr00t.eval.robot import RobotInferenceClient
+from gr00t.experiment.data_config import load_data_config
+from gr00t.model.policy import BasePolicy, Gr00tPolicy
+from gr00t.utils.eval import calc_mse_for_single_trajectory
 
 warnings.simplefilter("ignore", category=FutureWarning)
 

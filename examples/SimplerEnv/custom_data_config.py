@@ -14,18 +14,18 @@
 # limitations under the License.
 
 
-from gr00t_n15.data.transform.base import ComposedModalityTransform, ModalityTransform
-from gr00t_n15.data.transform.concat import ConcatTransform
-from gr00t_n15.data.transform.state_action import StateActionToTensor, StateActionTransform
-from gr00t_n15.data.transform.video import (
+from gr00t.data.transform.base import ComposedModalityTransform, ModalityTransform
+from gr00t.data.transform.concat import ConcatTransform
+from gr00t.data.transform.state_action import StateActionToTensor, StateActionTransform
+from gr00t.data.transform.video import (
     VideoColorJitter,
     VideoCrop,
     VideoResize,
     VideoToNumpy,
     VideoToTensor,
 )
-from gr00t_n15.experiment.data_config import BaseDataConfig, So100DataConfig
-from gr00t_n15.model.transforms import GR00TTransform
+from gr00t.experiment.data_config import BaseDataConfig, So100DataConfig
+from gr00t.model.transforms import GR00TTransform
 
 
 class FractalDataConfig(BaseDataConfig):

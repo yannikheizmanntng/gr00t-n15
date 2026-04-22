@@ -22,7 +22,7 @@ from torch.distributions import Beta
 from transformers import PretrainedConfig
 from transformers.feature_extraction_utils import BatchFeature
 
-from gr00t_n15.model.action_head.action_encoder import SinusoidalPositionalEncoding, swish
+from gr00t.model.action_head.action_encoder import SinusoidalPositionalEncoding, swish
 
 from .cross_attention_dit import DiT, SelfAttentionTransformer
 

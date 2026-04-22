@@ -22,8 +22,8 @@ import pytorch3d.transforms as pt
 import torch
 from pydantic import Field, PrivateAttr, field_validator, model_validator
 
-from gr00t_n15.data.schema import DatasetMetadata, RotationType, StateActionMetadata
-from gr00t_n15.data.transform.base import InvertibleModalityTransform, ModalityTransform
+from gr00t.data.schema import DatasetMetadata, RotationType, StateActionMetadata
+from gr00t.data.transform.base import InvertibleModalityTransform, ModalityTransform
 
 
 class RotationTransform:

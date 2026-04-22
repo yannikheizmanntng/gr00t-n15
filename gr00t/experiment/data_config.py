@@ -17,22 +17,22 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Optional
 
-from gr00t_n15.data.dataset import ModalityConfig
-from gr00t_n15.data.transform.base import ComposedModalityTransform, ModalityTransform
-from gr00t_n15.data.transform.concat import ConcatTransform
-from gr00t_n15.data.transform.state_action import (
+from gr00t.data.dataset import ModalityConfig
+from gr00t.data.transform.base import ComposedModalityTransform, ModalityTransform
+from gr00t.data.transform.concat import ConcatTransform
+from gr00t.data.transform.state_action import (
     StateActionSinCosTransform,
     StateActionToTensor,
     StateActionTransform,
 )
-from gr00t_n15.data.transform.video import (
+from gr00t.data.transform.video import (
     VideoColorJitter,
     VideoCrop,
     VideoResize,
     VideoToNumpy,
     VideoToTensor,
 )
-from gr00t_n15.model.transforms import GR00TTransform
+from gr00t.model.transforms import GR00TTransform
 
 
 @dataclass

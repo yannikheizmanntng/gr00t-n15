@@ -3,7 +3,7 @@ requires = ["setuptools>=64.0.0", "wheel", "pip>=21.3", "setuptools_scm[toml]>=6
 build-backend = "setuptools.build_meta:__legacy__"
 
 [project]
-name = "gr00t-n15"
+name = "gr00t"
 version = "1.1.0"
 readme = "README.md"
 classifiers = [
@@ -83,7 +83,7 @@ exclude = [
 include-package-data = true
 
 [tool.setuptools.package-data]
-gr00t_n15 = ["py.typed"]
+gr00t = ["py.typed"]
 
 [tool.setuptools.dynamic]
 version = {attr = "gr00t_n15.version.VERSION"}

@@ -24,13 +24,13 @@ import torch
 import tyro
 from transformers import TrainingArguments
 
-from gr00t_n15.data.dataset import LeRobotMixtureDataset, LeRobotSingleDataset
-from gr00t_n15.data.schema import EmbodimentTag
-from gr00t_n15.experiment.data_config import load_data_config
-from gr00t_n15.experiment.runner import TrainRunner
-from gr00t_n15.model.gr00t_n1 import GR00T_N1_5
-from gr00t_n15.model.transforms import EMBODIMENT_TAG_MAPPING
-from gr00t_n15.utils.peft import get_lora_model
+from gr00t.data.dataset import LeRobotMixtureDataset, LeRobotSingleDataset
+from gr00t.data.schema import EmbodimentTag
+from gr00t.experiment.data_config import load_data_config
+from gr00t.experiment.runner import TrainRunner
+from gr00t.model.gr00t_n1 import GR00T_N1_5
+from gr00t.model.transforms import EMBODIMENT_TAG_MAPPING
+from gr00t.utils.peft import get_lora_model
 
 
 @dataclass
@@ -249,7 +249,7 @@ def main(config: ArgsConfig):
         hasattr(transforms, "transforms") and len(transforms.transforms) > 0
     ), "No transforms found"
     last_transform = transforms.transforms[-1]
-    from gr00t_n15.model.transforms import GR00TTransform
+    from gr00t.model.transforms import GR00TTransform
 
     assert isinstance(last_transform, GR00TTransform), "Last transform must be GR00TTransform"
     assert hasattr(last_transform, "max_action_dim"), "GR00TTransform must have max_action_dim"
@@ -287,7 +287,7 @@ def main(config: ArgsConfig):
         new_action_head_config.action_dim = data_max_action_dim
 
         # Import the FlowmatchingActionHead class
-        from gr00t_n15.model.action_head.flow_matching_action_head import (
+        from gr00t.model.action_head.flow_matching_action_head import (
             FlowmatchingActionHead,
         )
 

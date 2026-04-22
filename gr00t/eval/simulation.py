@@ -26,14 +26,14 @@ import robocasa  # noqa: F401
 import robosuite  # noqa: F401
 from robocasa.utils.gym_utils import GrootRoboCasaEnv  # noqa: F401
 
-from gr00t_n15.data.dataset import ModalityConfig
-from gr00t_n15.eval.service import BaseInferenceClient
-from gr00t_n15.eval.wrappers.multistep_wrapper import MultiStepWrapper
-from gr00t_n15.eval.wrappers.video_recording_wrapper import (
+from gr00t.data.dataset import ModalityConfig
+from gr00t.eval.service import BaseInferenceClient
+from gr00t.eval.wrappers.multistep_wrapper import MultiStepWrapper
+from gr00t.eval.wrappers.video_recording_wrapper import (
     VideoRecorder,
     VideoRecordingWrapper,
 )
-from gr00t_n15.model.policy import BasePolicy
+from gr00t.model.policy import BasePolicy
 
 # from gymnasium.envs.registration import registry
 

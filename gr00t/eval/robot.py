@@ -15,9 +15,9 @@
 
 from typing import Any, Dict
 
-from gr00t_n15.data.dataset import ModalityConfig
-from gr00t_n15.eval.service import BaseInferenceClient, BaseInferenceServer
-from gr00t_n15.model.policy import BasePolicy
+from gr00t.data.dataset import ModalityConfig
+from gr00t.eval.service import BaseInferenceClient, BaseInferenceServer
+from gr00t.model.policy import BasePolicy
 
 
 class RobotInferenceServer(BaseInferenceServer):

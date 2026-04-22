@@ -61,10 +61,10 @@ from typing import Literal
 import numpy as np
 import tyro
 
-from gr00t_n15.data.embodiment_tags import EMBODIMENT_TAG_MAPPING
-from gr00t_n15.eval.robot import RobotInferenceClient, RobotInferenceServer
-from gr00t_n15.experiment.data_config import load_data_config
-from gr00t_n15.model.policy import Gr00tPolicy
+from gr00t.data.embodiment_tags import EMBODIMENT_TAG_MAPPING
+from gr00t.eval.robot import RobotInferenceClient, RobotInferenceServer
+from gr00t.experiment.data_config import load_data_config
+from gr00t.model.policy import Gr00tPolicy
 
 
 @dataclass
@@ -207,7 +207,7 @@ def main(args: ArgsConfig):
 
         # Start the server
         if args.http_server:
-            from gr00t_n15.eval.http_server import HTTPInferenceServer  # noqa: F401
+            from gr00t.eval.http_server import HTTPInferenceServer  # noqa: F401
 
             server = HTTPInferenceServer(
                 policy, port=args.port, host=args.host, api_token=args.api_token

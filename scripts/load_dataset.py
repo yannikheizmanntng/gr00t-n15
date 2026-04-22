@@ -28,14 +28,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tyro
 
-from gr00t_n15.data.dataset import (
+from gr00t.data.dataset import (
     LE_ROBOT_MODALITY_FILENAME,
     LeRobotMixtureDataset,
     LeRobotSingleDataset,
     ModalityConfig,
 )
-from gr00t_n15.data.embodiment_tags import EMBODIMENT_TAG_MAPPING, EmbodimentTag
-from gr00t_n15.utils.misc import any_describe
+from gr00t.data.embodiment_tags import EMBODIMENT_TAG_MAPPING, EmbodimentTag
+from gr00t.utils.misc import any_describe
 
 
 def print_yellow(text: str) -> None:

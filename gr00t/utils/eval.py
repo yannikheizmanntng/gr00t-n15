@@ -16,8 +16,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-from gr00t_n15.data.dataset import LeRobotSingleDataset
-from gr00t_n15.model.policy import BasePolicy
+from gr00t.data.dataset import LeRobotSingleDataset
+from gr00t.model.policy import BasePolicy
 
 # numpy print precision settings 3, dont use exponential notation
 np.set_printoptions(precision=3, suppress=True)

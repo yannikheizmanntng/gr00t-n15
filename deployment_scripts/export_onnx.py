@@ -32,10 +32,10 @@ from transformers.models.siglip.modeling_siglip import (
     SiglipVisionTransformer,
 )
 
-from gr00t_n15.data.dataset import LeRobotSingleDataset
-from gr00t_n15.experiment.data_config import load_data_config
-from gr00t_n15.model.backbone.eagle_backbone import DEFAULT_EAGLE_PATH, EagleBackbone
-from gr00t_n15.model.policy import Gr00tPolicy, unsqueeze_dict_values
+from gr00t.data.dataset import LeRobotSingleDataset
+from gr00t.experiment.data_config import load_data_config
+from gr00t.model.backbone.eagle_backbone import DEFAULT_EAGLE_PATH, EagleBackbone
+from gr00t.model.policy import Gr00tPolicy, unsqueeze_dict_values
 
 
 def no_batch_collate_fn(batch):

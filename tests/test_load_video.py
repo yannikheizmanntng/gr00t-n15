@@ -8,7 +8,7 @@ import os
 
 from PIL import Image
 
-from gr00t_n15.utils.video import get_frames_by_timestamps
+from gr00t.utils.video import get_frames_by_timestamps
 
 
 def save_frames_at_time(

@@ -22,7 +22,7 @@ import msgpack
 import numpy as np
 import zmq
 
-from gr00t_n15.data.dataset import ModalityConfig
+from gr00t.data.dataset import ModalityConfig
 
 
 class MsgSerializer:

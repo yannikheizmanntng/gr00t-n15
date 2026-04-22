@@ -3,9 +3,9 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from gr00t_n15.data.dataset import LeRobotSingleDataset, ModalityConfig
-from gr00t_n15.data.embodiment_tags import EmbodimentTag
-from gr00t_n15.utils.misc import any_describe
+from gr00t.data.dataset import LeRobotSingleDataset, ModalityConfig
+from gr00t.data.embodiment_tags import EmbodimentTag
+from gr00t.utils.misc import any_describe
 
 
 @pytest.fixture

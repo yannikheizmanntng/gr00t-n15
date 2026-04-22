@@ -27,9 +27,9 @@ from transformers import AutoProcessor, ProcessorMixin
 from transformers.data.data_collator import DataCollatorMixin
 from transformers.feature_extraction_utils import BatchFeature
 
-from gr00t_n15.data.embodiment_tags import EMBODIMENT_TAG_MAPPING, EmbodimentTag
-from gr00t_n15.data.schema import DatasetMetadata
-from gr00t_n15.data.transform.base import InvertibleModalityTransform
+from gr00t.data.embodiment_tags import EMBODIMENT_TAG_MAPPING, EmbodimentTag
+from gr00t.data.schema import DatasetMetadata
+from gr00t.data.transform.base import InvertibleModalityTransform
 
 from .backbone.eagle_backbone import DEFAULT_EAGLE_PATH
 

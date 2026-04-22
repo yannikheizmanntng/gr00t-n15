@@ -36,7 +36,7 @@ from pydantic import BaseModel, Field, ValidationError
 from torch.utils.data import Dataset
 from tqdm import tqdm
 
-from gr00t_n15.utils.video import get_all_frames, get_frames_by_timestamps
+from gr00t.utils.video import get_all_frames, get_frames_by_timestamps
 
 from .embodiment_tags import EmbodimentTag
 from .schema import (

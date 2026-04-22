@@ -83,7 +83,7 @@ class GR00TPolicy:
     }
 
     def __init__(self, host="localhost", port=5555, headless=False):
-        from gr00t_n15.eval.service import ExternalRobotInferenceClient
+        from gr00t.eval.service import ExternalRobotInferenceClient
 
         self.policy = ExternalRobotInferenceClient(host=host, port=port)
         self.config = self.LIBERO_CONFIG

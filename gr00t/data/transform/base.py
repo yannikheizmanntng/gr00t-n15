@@ -18,7 +18,7 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field, PrivateAttr
 
-from gr00t_n15.data.schema import DatasetMetadata
+from gr00t.data.schema import DatasetMetadata
 
 
 class ModalityTransform(BaseModel, ABC):

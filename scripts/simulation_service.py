@@ -17,14 +17,14 @@ import argparse
 
 import numpy as np
 
-from gr00t_n15.eval.robot import RobotInferenceServer
-from gr00t_n15.eval.simulation import (
+from gr00t.eval.robot import RobotInferenceServer
+from gr00t.eval.simulation import (
     MultiStepConfig,
     SimulationConfig,
     SimulationInferenceClient,
     VideoConfig,
 )
-from gr00t_n15.model.policy import Gr00tPolicy
+from gr00t.model.policy import Gr00tPolicy
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -23,8 +23,8 @@ import torchvision.transforms.v2 as T
 from einops import rearrange
 from pydantic import Field, PrivateAttr, field_validator
 
-from gr00t_n15.data.schema import DatasetMetadata
-from gr00t_n15.data.transform.base import ModalityTransform
+from gr00t.data.schema import DatasetMetadata
+from gr00t.data.transform.base import ModalityTransform
 
 
 class VideoTransform(ModalityTransform):

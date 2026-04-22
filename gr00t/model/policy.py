@@ -23,11 +23,11 @@ import torch
 from huggingface_hub import snapshot_download
 from huggingface_hub.errors import HFValidationError, RepositoryNotFoundError
 
-from gr00t_n15.data.dataset import ModalityConfig
-from gr00t_n15.data.embodiment_tags import EmbodimentTag
-from gr00t_n15.data.schema import DatasetMetadata
-from gr00t_n15.data.transform.base import ComposedModalityTransform
-from gr00t_n15.model.gr00t_n1 import GR00T_N1_5
+from gr00t.data.dataset import ModalityConfig
+from gr00t.data.embodiment_tags import EmbodimentTag
+from gr00t.data.schema import DatasetMetadata
+from gr00t.data.transform.base import ComposedModalityTransform
+from gr00t.model.gr00t_n1 import GR00T_N1_5
 
 COMPUTE_DTYPE = torch.bfloat16
 
@@ -254,7 +254,7 @@ class Gr00tPolicy(BasePolicy):
             new_action_head_config.action_horizon = expected_action_horizon
 
             # Import the FlowmatchingActionHead class
-            from gr00t_n15.model.action_head.flow_matching_action_head import (
+            from gr00t.model.action_head.flow_matching_action_head import (
                 FlowmatchingActionHead,
             )
 

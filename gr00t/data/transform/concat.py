@@ -19,8 +19,8 @@ import numpy as np
 import torch
 from pydantic import Field
 
-from gr00t_n15.data.schema import DatasetMetadata, StateActionMetadata
-from gr00t_n15.data.transform.base import InvertibleModalityTransform
+from gr00t.data.schema import DatasetMetadata, StateActionMetadata
+from gr00t.data.transform.base import InvertibleModalityTransform
 
 
 class ConcatTransform(InvertibleModalityTransform):

@@ -20,7 +20,7 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 
-from gr00t_n15.model.policy import Gr00tPolicy
+from gr00t.model.policy import Gr00tPolicy
 
 # Patch json to handle numpy arrays
 json_numpy.patch()
